@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Guangdong Family Trip</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <h1>
+                🇨🇳 Guangdong Food & Culture Trip
+            </h1>
+
+            <p>
+                Shenzhen • Guangzhou • Chaoshan
+            </p>
+
+            <div class="controls">
+
+                <input
+                    id="search"
+                    type="text"
+                    placeholder="Search places, food, attractions...">
+
+                <button
+                    id="themeBtn">
+                    🌙
+                </button>
+
+            </div>
+
+            <nav>
+
+                <button
+                    class="region-btn active"
+                    data-region="Shenzhen">
+                    Shenzhen
+                </button>
+
+                <button
+                    class="region-btn"
+                    data-region="Guangzhou">
+                    Guangzhou
+                </button>
+
+                <button
+                    class="region-btn"
+                    data-region="Chaoshan">
+                    Chaoshan
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="progress-container">
+
+        <div
+            class="progress-bar"
+            id="progressBar"></div>
+
+    </div>
+
+    <main>
+
+        <section class="weather-section">
+
+            <div class="weather-card">
+                <h3>Shenzhen</h3>
+                <p>20°C - 23°C</p>
+            </div>
+
+            <div class="weather-card">
+                <h3>Guangzhou</h3>
+                <p>21°C - 23°C</p>
+            </div>
+
+            <div class="weather-card">
+                <h3>Chaoshan</h3>
+                <p>20°C - 22°C</p>
+            </div>
+
+        </section>
+
+        <section class="action-bar">
+
+            <button id="expandAll">
+                Expand All
+            </button>
+
+            <button id="collapseAll">
+                Collapse All
+            </button>
+
+        </section>
+
+        <section id="daysContainer"></section>
+
+    </main>
+
+    <button id="backToTop">
+        ↑
+    </button>
+
+    <div id="lightbox">
+
+        <img id="lightboxImg">
+
+    </div>
+
+    <script src="data/itinerary.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
